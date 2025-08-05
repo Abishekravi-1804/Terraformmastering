@@ -26,6 +26,6 @@ variable "environment" {
 
 variable "allowed_ssh_cidr" {
   type    = string
-  default = "49.47.217.85/32" 
+  default = "0.0.0.0/0" 
   description = "CIDR block allowed for SSH ingress"
 }
