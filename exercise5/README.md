@@ -12,15 +12,5 @@ This Day 5 project implements a comprehensive AWS infrastructure using Terraform
 
 ## 🏗️ **Architecture**
 
-Internet Gateway
-|
-Public Subnets (2 AZs)
-|
-ALB + Bastion Host
-|
-Private Subnets (2 AZs)
-|
-Auto Scaling Group (2-3 instances)
-|
-NAT Gateway (outbound only)
+Internet Gateway ----Public Subnets (2 AZs)----ALB + Bastion Host----Private Subnets (2 AZs)----Auto Scaling Group (2-3 instances)----NAT Gateway (outbound only)
 
