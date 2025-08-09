@@ -1,4 +1,4 @@
-# 📚 **Day 5 - Auto Scaling Group with Application Load Balancer**
+# 📚 **Day 4 - Auto Scaling Group with Application Load Balancer**
 
 ## 🎯 **Project Overview**
 
