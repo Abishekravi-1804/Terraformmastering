@@ -2,7 +2,7 @@
 
 ## 🎯 **Project Overview**
 
-This Day 5 project implements a comprehensive AWS infrastructure using Terraform that includes:
+This Day 4 project implements a comprehensive AWS infrastructure using Terraform that includes:
 - **VPC** with public/private subnets across multiple AZs
 - **Bastion Host** for secure SSH access to private instances
 - **Auto Scaling Group (ASG)** for scalable web application instances
