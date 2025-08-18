@@ -15,12 +15,12 @@ provider "aws" {
 
 
 resource "aws_s3_bucket" "my_first_bucket" {
-    bucket = "my-terraform-learning-bucket-${random_string.suffix.result}"
+  bucket = "my-terraform-learning-bucket-${random_string.suffix.result}"
 
-    tags = {
+  tags = {
     Name        = "my_first_bucket"
     Environment = "Dev"
-    Owner = " Abishek "
+    Owner       = " Abishek "
 
   }
 }
@@ -65,7 +65,7 @@ resource "random_string" "suffix" {
 }
 
 resource "aws_s3_bucket_versioning" "versioning_example" {
-  bucket = aws_s3_bucket.my_first_bucket.id 
+  bucket = aws_s3_bucket.my_first_bucket.id
   versioning_configuration {
     status = "Enabled"
   }
@@ -77,14 +77,14 @@ resource "aws_kms_key" "mykey" {
 }
 
 resource "aws_s3_bucket_server_side_encryption_configuration" "example" {
-  bucket = aws_s3_bucket.my_first_bucket.id 
+  bucket = aws_s3_bucket.my_first_bucket.id
 
   rule {
     apply_server_side_encryption_by_default {
       kms_master_key_id = aws_kms_key.mykey.arn
       sse_algorithm     = "aws:kms"
-    
+
     }
- 
+
   }
 }
