@@ -24,22 +24,6 @@
 - **Network ACLs** restrict/allow traffic at the subnet level.
 
 ---
-## 📊 Project Structure
-
-.
-├── main.tf # Root Terraform configuration
-├── variables.tf # Root input variables
-├── outputs.tf # Root outputs
-├── terraform.tfvars # Variable values; edit your IP & subnet CIDRs here
-
-├── keypair/ # Generates SSH key pair
-├── vpc1/ # VPC1 (Management), subnets, routes, security groups
-├── vpc2/ # VPC2 (Production), subnets, routes, security groups
-├── peering/ # VPC peering connection, routes
-├── network-acls/ # Network ACL resources
-└── instances/ # Bastion, web servers, database server EC2s
----
-
 ## ✏️ Prerequisites
 
 - AWS account, `aws` CLI configured
