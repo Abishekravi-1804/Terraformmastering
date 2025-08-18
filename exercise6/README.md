@@ -56,7 +56,7 @@ terraform apply
 - Retrieve your SSH private key:
 
 terraform output -raw private_key_pem > day6-private-key.pem
-chmod 600 day6-private-key.pem
+chmod 400 day6-private-key.pem
 
 - From bastion, SSH into the web servers or database with their private IPs.
 
