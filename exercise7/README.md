@@ -1,4 +1,4 @@
-📖 Day 7: Terraform State Management
+📖 Day 6: Terraform State Management
 Terraform project demonstrating remote state management with AWS S3 backend and DynamoDB state locking.
 
 🎯 What This Does
