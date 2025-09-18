@@ -1,0 +1,16 @@
+{
+  "Records": [
+    {
+      "eventVersion": "2.1",
+      "eventSource": "aws:s3",
+      "s3": {
+        "bucket": {
+          "name": "my-s3-demo-source-bucket1"
+        },
+        "object": {
+          "key": "testing.jpg"
+        }
+      }
+    }
+  ]
+}
